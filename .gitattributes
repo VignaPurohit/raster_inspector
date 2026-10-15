@@ -1,0 +1,3 @@
+# Keep git metadata out of `git archive` zips uploaded to plugins.qgis.org
+.gitignore export-ignore
+.gitattributes export-ignore
