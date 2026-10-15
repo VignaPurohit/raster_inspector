@@ -1,4 +1,4 @@
-"""Raster Inspector plugin: wires the map tool, dock panel and storage."""
+"""RasterSample plugin: wires the map tool, dock panel and storage."""
 
 import os
 
@@ -12,7 +12,7 @@ from .map_tool import RasterInspectorTool
 from .stats import compute_stats
 from .storage import get_or_create_output_layer, save_sample
 
-MENU = "&Raster Inspector"
+MENU = "&RasterSample"
 
 
 class RasterInspectorPlugin:
@@ -29,9 +29,9 @@ class RasterInspectorPlugin:
     # ------------------------------------------------------------------ setup
     def initGui(self):
         icon = QIcon(os.path.join(os.path.dirname(__file__), "icon.svg"))
-        self.action = QAction(icon, "Raster Inspector", self.iface.mainWindow())
+        self.action = QAction(icon, "RasterSample", self.iface.mainWindow())
         self.action.setCheckable(True)
-        self.action.setToolTip("Sketch polygons and inspect raster statistics")
+        self.action.setToolTip("RasterSample – Interactive Geospatial Sampling Tool")
         self.action.toggled.connect(self.set_active)
         self.iface.addToolBarIcon(self.action)
         self.iface.addPluginToRasterMenu(MENU, self.action)
@@ -92,7 +92,7 @@ class RasterInspectorPlugin:
     def on_polygon_finished(self, geom):
         layer = self.dock.layer_combo.currentLayer()
         if layer is None:
-            self.notify("Add or select a raster layer in the Raster Inspector panel.",
+            self.notify("Add or select a raster layer in the RasterSample panel.",
                         Qgis.MessageLevel.Warning)
             self.tool.reset()
             return
@@ -168,4 +168,4 @@ class RasterInspectorPlugin:
 
     # ---------------------------------------------------------------- utils
     def notify(self, text, level):
-        self.iface.messageBar().pushMessage("Raster Inspector", text, level, 4)
+        self.iface.messageBar().pushMessage("RasterSample", text, level, 4)

@@ -27,7 +27,7 @@ class RasterInspectorDock(QgsDockWidget):
     zoomClicked = pyqtSignal()
 
     def __init__(self, parent=None):
-        super().__init__("Raster Inspector", parent)
+        super().__init__("RasterSample", parent)
         self.setObjectName("RasterInspectorDock")
 
         root = QWidget()

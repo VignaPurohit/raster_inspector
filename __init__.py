@@ -1,4 +1,4 @@
-"""Raster Inspector - QGIS plugin entry point."""
+"""RasterSample - QGIS plugin entry point."""
 
 
 def classFactory(iface):

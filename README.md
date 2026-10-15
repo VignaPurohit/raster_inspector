@@ -1,4 +1,6 @@
-# Raster Inspector (QGIS plugin)
+# RasterSample — Interactive Geospatial Sampling Tool
+
+A QGIS plugin for sketching polygons, inspecting the raster statistics inside them, and saving the samples you keep.
 
 Sketch polygons on the map, inspect raster statistics inside them, and save the
 ones you keep as sample features. Built from the final checkpoint of the
@@ -24,7 +26,7 @@ not sure, use *Settings → User Profiles → Open Active Profile Folder*.
 
 ## Use
 
-1. Load a raster and click the **Raster Inspector** toolbar button (or *Raster → Raster Inspector*).
+1. Load a raster and click the **RasterSample** toolbar button (or *Raster → RasterSample*).
 2. In the panel, choose the **layer** and **band**.
 3. On the map: **left-click** to add vertices, **right-click** to finish.
 4. The polygon turns green and the panel shows **mean / min / max / pixels**.
