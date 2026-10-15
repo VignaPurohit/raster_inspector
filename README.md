@@ -35,6 +35,13 @@ Saved polygons go to a memory layer (default `inspection_samples`) with the fiel
 `sample_id, note, raster, band, mean, min, max, pixel_count, created`.
 Memory layers are temporary, so use *Export → Save Features As…* to keep them.
 
+## Sample data
+
+`sample_data/denali_dem_30m.tif` is a small test raster: a digital elevation model
+of the Denali area, Alaska. It is resampled to 30 m (766 × 734 pixels) in an Albers
+equal-area projection, with elevations from about 1,070 m to 6,165 m. Drag it into
+QGIS and try sketching polygons over the summit and the surrounding glaciers.
+
 ## Differences from the workshop script
 
 - It has a dock panel UI, and messages appear in the message bar instead of `print()`.
