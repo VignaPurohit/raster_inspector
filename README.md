@@ -42,6 +42,10 @@ of the Denali area, Alaska. It is resampled to 30 m (766 × 734 pixels) in an Al
 equal-area projection, with elevations from about 1,070 m to 6,165 m. Drag it into
 QGIS and try sketching polygons over the summit and the surrounding glaciers.
 
+Source: Alaska IFSAR DTM, distributed by the USGS Earth Resources Observation and
+Science (EROS) Center and downloaded from [USGS EarthExplorer](https://earthexplorer.usgs.gov/).
+Resampled from 5 m to 30 m for this plugin.
+
 ## Differences from the workshop script
 
 - It has a dock panel UI, and messages appear in the message bar instead of `print()`.
